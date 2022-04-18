@@ -13,7 +13,7 @@ import (
 )
 
 func Clone(url string) string {
-	tmpDir, err := ioutil.TempDir("tmp", "oss")
+	tmpDir, err := ioutil.TempDir(".", "oss")
 	if err != nil {
 		log.Fatal(err)
 	}
